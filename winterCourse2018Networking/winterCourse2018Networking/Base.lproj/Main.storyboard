@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,42 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="winterCourse2018Networking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OB8-GQ-CvN">
+                                <rect key="frame" x="167.5" y="328.5" width="40" height="30"/>
+                                <state key="normal" title="POST"/>
+                                <connections>
+                                    <action selector="post" destination="BYZ-38-t0r" eventType="touchUpInside" id="NSS-8l-KcL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTE-0H-BRH">
+                                <rect key="frame" x="260" y="328.5" width="69" height="30"/>
+                                <state key="normal" title="Download"/>
+                                <connections>
+                                    <action selector="download" destination="BYZ-38-t0r" eventType="touchUpInside" id="HGL-wC-Cbd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W1-0A-3Zl">
+                                <rect key="frame" x="85" y="328" width="30" height="30"/>
+                                <state key="normal" title="GET"/>
+                                <connections>
+                                    <action selector="get" destination="BYZ-38-t0r" eventType="touchUpInside" id="K0i-3Z-2Sr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OB8-GQ-CvN" firstAttribute="leading" secondItem="3W1-0A-3Zl" secondAttribute="trailing" constant="52.5" id="Eqg-om-DQc"/>
+                            <constraint firstItem="dTE-0H-BRH" firstAttribute="centerY" secondItem="OB8-GQ-CvN" secondAttribute="centerY" id="K6I-e7-yYr"/>
+                            <constraint firstItem="OB8-GQ-CvN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UnM-xf-yDx"/>
+                            <constraint firstItem="3W1-0A-3Zl" firstAttribute="centerY" secondItem="OB8-GQ-CvN" secondAttribute="centerY" id="eGu-G1-7Tx"/>
+                            <constraint firstItem="dTE-0H-BRH" firstAttribute="leading" secondItem="OB8-GQ-CvN" secondAttribute="trailing" constant="52.5" id="sp6-u5-4bI"/>
+                            <constraint firstItem="OB8-GQ-CvN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wVD-bG-0AN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

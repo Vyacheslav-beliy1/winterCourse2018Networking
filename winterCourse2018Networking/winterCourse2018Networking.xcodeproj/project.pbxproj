@@ -12,6 +12,8 @@
 		17AC444E205D334F00F3DDD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AC444C205D334F00F3DDD1 /* Main.storyboard */; };
 		17AC4450205D334F00F3DDD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17AC444F205D334F00F3DDD1 /* Assets.xcassets */; };
 		17AC4453205D334F00F3DDD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AC4451205D334F00F3DDD1 /* LaunchScreen.storyboard */; };
+		17AC445B205D483A00F3DDD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC445A205D483A00F3DDD1 /* Post.swift */; };
+		17AC445D205D64C900F3DDD1 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC445C205D64C900F3DDD1 /* NetworkConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		17AC444F205D334F00F3DDD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17AC4452205D334F00F3DDD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17AC4454205D334F00F3DDD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17AC445A205D483A00F3DDD1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		17AC445C205D64C900F3DDD1 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				17AC444F205D334F00F3DDD1 /* Assets.xcassets */,
 				17AC4451205D334F00F3DDD1 /* LaunchScreen.storyboard */,
 				17AC4454205D334F00F3DDD1 /* Info.plist */,
+				17AC445A205D483A00F3DDD1 /* Post.swift */,
+				17AC445C205D64C900F3DDD1 /* NetworkConstants.swift */,
 			);
 			path = winterCourse2018Networking;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17AC445D205D64C900F3DDD1 /* NetworkConstants.swift in Sources */,
+				17AC445B205D483A00F3DDD1 /* Post.swift in Sources */,
 				17AC444B205D334F00F3DDD1 /* ViewController.swift in Sources */,
 				17AC4449205D334E00F3DDD1 /* AppDelegate.swift in Sources */,
 			);
