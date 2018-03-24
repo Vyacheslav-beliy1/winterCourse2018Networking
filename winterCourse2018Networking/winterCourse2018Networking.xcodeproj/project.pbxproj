@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1769EF7520668EFA006845B3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1769EF7420668EFA006845B3 /* NetworkManager.swift */; };
+		1769EF77206693C2006845B3 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1769EF76206693C2006845B3 /* Storage.swift */; };
 		17AC4449205D334E00F3DDD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC4448205D334E00F3DDD1 /* AppDelegate.swift */; };
 		17AC444B205D334F00F3DDD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC444A205D334F00F3DDD1 /* ViewController.swift */; };
 		17AC444E205D334F00F3DDD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AC444C205D334F00F3DDD1 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		1769EF7420668EFA006845B3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1769EF76206693C2006845B3 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		17AC4445205D334E00F3DDD1 /* winterCourse2018Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = winterCourse2018Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17AC4448205D334E00F3DDD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17AC444A205D334F00F3DDD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				17AC445A205D483A00F3DDD1 /* Post.swift */,
 				17AC445C205D64C900F3DDD1 /* NetworkConstants.swift */,
 				1769EF7420668EFA006845B3 /* NetworkManager.swift */,
+				1769EF76206693C2006845B3 /* Storage.swift */,
 			);
 			path = winterCourse2018Networking;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				1769EF7520668EFA006845B3 /* NetworkManager.swift in Sources */,
 				17AC444B205D334F00F3DDD1 /* ViewController.swift in Sources */,
 				17AC4449205D334E00F3DDD1 /* AppDelegate.swift in Sources */,
+				1769EF77206693C2006845B3 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

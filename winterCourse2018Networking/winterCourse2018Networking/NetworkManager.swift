@@ -32,6 +32,8 @@ class NetworkManager: NSObject, URLSessionDownloadDelegate {
                 let json = data {
                 guard let post = try? JSONDecoder().decode(Post.self, from: json) else { return }
                 print("userID = \(post.userId!), title \(post.title!)")
+                
+//                Storage().saveInfoToCash(data: [json], key: STORAGEPOSTAPI)
             }
             }.resume()
     }
