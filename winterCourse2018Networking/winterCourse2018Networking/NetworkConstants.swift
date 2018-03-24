@@ -8,6 +8,6 @@
 
 import Foundation
 
-var server = URL(string:"http://jsonplaceholder.typicode.com")
-let postApi = server?.appendPathComponent("/posts")
-let userApi = server?.appendPathComponent("/users")
+let server = URL(string:"http://jsonplaceholder.typicode.com")
+let postApi = URL(string:"http://jsonplaceholder.typicode.com/posts")
+let userApi = URL(string:"http://jsonplaceholder.typicode.com/users")
