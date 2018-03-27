@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1769EF7520668EFA006845B3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1769EF7420668EFA006845B3 /* NetworkManager.swift */; };
 		1769EF77206693C2006845B3 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1769EF76206693C2006845B3 /* Storage.swift */; };
+		1769EF7B20669DED006845B3 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1769EF7A20669DED006845B3 /* MyTableViewController.swift */; };
+		1769EF7E20669ECC006845B3 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1769EF7C20669ECC006845B3 /* MyTableViewCell.swift */; };
+		1769EF7F20669ECC006845B3 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1769EF7D20669ECC006845B3 /* MyTableViewCell.xib */; };
 		17AC4449205D334E00F3DDD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC4448205D334E00F3DDD1 /* AppDelegate.swift */; };
 		17AC444B205D334F00F3DDD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC444A205D334F00F3DDD1 /* ViewController.swift */; };
 		17AC444E205D334F00F3DDD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AC444C205D334F00F3DDD1 /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		1769EF7420668EFA006845B3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		1769EF76206693C2006845B3 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		1769EF7A20669DED006845B3 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		1769EF7C20669ECC006845B3 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		1769EF7D20669ECC006845B3 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		17AC4445205D334E00F3DDD1 /* winterCourse2018Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = winterCourse2018Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17AC4448205D334E00F3DDD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17AC444A205D334F00F3DDD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +49,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1769EF7820669D47006845B3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				17AC445A205D483A00F3DDD1 /* Post.swift */,
+				1769EF7420668EFA006845B3 /* NetworkManager.swift */,
+				1769EF76206693C2006845B3 /* Storage.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1769EF7920669D4D006845B3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				17AC444A205D334F00F3DDD1 /* ViewController.swift */,
+				1769EF7A20669DED006845B3 /* MyTableViewController.swift */,
+				1769EF7C20669ECC006845B3 /* MyTableViewCell.swift */,
+				1769EF7D20669ECC006845B3 /* MyTableViewCell.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		17AC443C205D334E00F3DDD1 = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +89,14 @@
 		17AC4447205D334E00F3DDD1 /* winterCourse2018Networking */ = {
 			isa = PBXGroup;
 			children = (
+				1769EF7920669D4D006845B3 /* UI */,
+				1769EF7820669D47006845B3 /* Core */,
 				17AC4448205D334E00F3DDD1 /* AppDelegate.swift */,
-				17AC444A205D334F00F3DDD1 /* ViewController.swift */,
 				17AC444C205D334F00F3DDD1 /* Main.storyboard */,
 				17AC444F205D334F00F3DDD1 /* Assets.xcassets */,
 				17AC4451205D334F00F3DDD1 /* LaunchScreen.storyboard */,
 				17AC4454205D334F00F3DDD1 /* Info.plist */,
-				17AC445A205D483A00F3DDD1 /* Post.swift */,
 				17AC445C205D64C900F3DDD1 /* NetworkConstants.swift */,
-				1769EF7420668EFA006845B3 /* NetworkManager.swift */,
-				1769EF76206693C2006845B3 /* Storage.swift */,
 			);
 			path = winterCourse2018Networking;
 			sourceTree = "<group>";
@@ -136,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17AC4453205D334F00F3DDD1 /* LaunchScreen.storyboard in Resources */,
+				1769EF7F20669ECC006845B3 /* MyTableViewCell.xib in Resources */,
 				17AC4450205D334F00F3DDD1 /* Assets.xcassets in Resources */,
 				17AC444E205D334F00F3DDD1 /* Main.storyboard in Resources */,
 			);
@@ -149,6 +175,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				17AC445D205D64C900F3DDD1 /* NetworkConstants.swift in Sources */,
+				1769EF7E20669ECC006845B3 /* MyTableViewCell.swift in Sources */,
+				1769EF7B20669DED006845B3 /* MyTableViewController.swift in Sources */,
 				17AC445B205D483A00F3DDD1 /* Post.swift in Sources */,
 				1769EF7520668EFA006845B3 /* NetworkManager.swift in Sources */,
 				17AC444B205D334F00F3DDD1 /* ViewController.swift in Sources */,
