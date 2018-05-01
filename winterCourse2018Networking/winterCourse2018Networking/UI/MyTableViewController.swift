@@ -43,7 +43,6 @@ class MyTableViewController: UITableViewController {
 
         cell.title.text = "title"
         cell.descriptionLabel.text = "text"
-        // Configure the cell...
 
         return cell
     }
