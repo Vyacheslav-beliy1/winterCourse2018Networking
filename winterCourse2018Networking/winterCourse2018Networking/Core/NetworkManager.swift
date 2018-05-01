@@ -18,8 +18,9 @@ class NetworkManager: NSObject, URLSessionDownloadDelegate {
     }
     
     
-     func get() {
-        guard let url = URL(string:"http://jsonplaceholder.typicode.com/posts/1") else { return }
+    class func get(url: URL) {
+        
+//        guard let url = URL(string:"http://jsonplaceholder.typicode.com/posts/1") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard error == nil else {

@@ -10,9 +10,13 @@ import UIKit
 
 class MyTableViewController: UITableViewController {
 
+    @IBOutlet weak var downloadTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        downloadTextField.delegate = self
+        
         self.tableView.register(UINib(nibName: "MyTableViewCell", bundle: nil), forCellReuseIdentifier: "MyTableViewCell")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -89,5 +93,23 @@ class MyTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
 
+extension MyTableViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if let str = textField.text, let number = Int(str) {
+            var url = POSTSAPI
+            url?.appendPathComponent("\(number)")
+            
+            if let getURL = url {
+                //var networkM = NetworkManager()
+               NetworkManager.get(url:getURL)
+            }
+        }
+        
+        textField.resignFirstResponder()
+        
+        return true
+    }
 }

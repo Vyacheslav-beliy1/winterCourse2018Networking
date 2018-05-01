@@ -9,7 +9,7 @@
 import Foundation
 
 let SERVER = URL(string:"http://jsonplaceholder.typicode.com")
-let POSTAPI = URL(string:"http://jsonplaceholder.typicode.com/posts")
+let POSTSAPI = URL(string:"http://jsonplaceholder.typicode.com/posts")
 let USERAPI = URL(string:"http://jsonplaceholder.typicode.com/users")
 
 

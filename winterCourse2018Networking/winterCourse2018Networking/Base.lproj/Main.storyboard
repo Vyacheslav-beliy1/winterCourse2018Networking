@@ -55,11 +55,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textField key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of post" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" id="uz5-Ac-IBH">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="continue"/>
+                        </textField>
                         <connections>
                             <outlet property="dataSource" destination="1pq-hQ-0Dy" id="d0C-fH-udA"/>
                             <outlet property="delegate" destination="1pq-hQ-0Dy" id="ooc-FF-cc8"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="downloadTextField" destination="uz5-Ac-IBH" id="hfN-hs-BLk"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYO-AR-T9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
