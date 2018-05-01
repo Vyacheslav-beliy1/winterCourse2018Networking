@@ -13,14 +13,33 @@ class User: Codable {
     var name : String?
     var username : String?
     var email : String?
+    var phone : String?
+    var website : String?
+    var company : UserCompany?
 
     required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
+         company = try values.decode(UserCompany.self, forKey: .company)
         address = try values.decode(UserAddress.self, forKey: .address)
         name = try values.decode(String.self, forKey: .name)
         id = try values.decode(Int.self, forKey: .id)
         username = try values.decode(String.self, forKey: .username)
         email = try values.decode(String.self, forKey: .email)
+        phone = try values.decode(String.self, forKey: .phone)
+        website = try values.decode(String.self, forKey: .website)
+    }
+}
+
+class UserCompany : Codable {
+    var name : String?
+    var catchPhrase : String?
+    var bs : String?
+    required init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        name = try values.decode(String.self, forKey: .name)
+        catchPhrase = try values.decode(String.self, forKey: .catchPhrase)
+        bs = try values.decode(String.self, forKey: .bs)
+        
     }
 }
 

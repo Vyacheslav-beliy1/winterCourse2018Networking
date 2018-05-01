@@ -11,7 +11,7 @@ import UIKit
 class UserViewController: UIViewController {
 
     @IBOutlet weak var userTabelView: UITableView!
-    var UsersArray = [User]()
+    var usersArray = [User]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,11 +40,13 @@ class UserViewController: UIViewController {
 }
 extension UserViewController : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return UsersArray.count
+        return usersArray.count
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
            let cell = userTabelView.dequeueReusableCell(withIdentifier: "UserTabelViewInditifier", for: indexPath) as! UserTableViewCell
+        cell.user = usersArray[indexPath.row]
         return cell
     }
     

@@ -9,7 +9,19 @@
 import UIKit
 
 class UserTableViewCell: UITableViewCell {
-
+    var user : User? {
+        didSet {
+            guard let currentUser = user else {return}
+            self.nameLabel.text = currentUser.name
+            self.userNameLabel.text = currentUser.username
+            self.phoneLabel.text = currentUser.phone
+            self.companyLabel.text = currentUser.company?.name
+        }
+    }
+    @IBOutlet weak var companyLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
