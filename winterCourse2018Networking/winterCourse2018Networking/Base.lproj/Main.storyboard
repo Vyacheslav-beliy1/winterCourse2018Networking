@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1pq-hQ-0Dy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SCe-xn-CWv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,6 +46,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-140" y="29"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Si-di-cNW">
+            <objects>
+                <navigationController id="SCe-xn-CWv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5K6-m2-t3Z">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WHa-yY-7Oz" kind="relationship" relationship="rootViewController" id="grc-6E-ndp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gbt-mz-CFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1649" y="27"/>
+        </scene>
+        <!--User View Controller-->
+        <scene sceneID="yjK-S1-oXb">
+            <objects>
+                <viewController id="WHa-yY-7Oz" customClass="UserViewController" customModule="winterCourse2018Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HbI-EI-doq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserTabelViewInditifier" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xsj-su-qPS">
+                                <rect key="frame" x="0.0" y="32" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xsj-su-qPS" firstAttribute="width" secondItem="HbI-EI-doq" secondAttribute="width" id="8mW-CO-Ew5"/>
+                            <constraint firstItem="xsj-su-qPS" firstAttribute="centerX" secondItem="0P6-s5-AEd" secondAttribute="centerX" id="QUp-6N-JMf"/>
+                            <constraint firstItem="xsj-su-qPS" firstAttribute="centerY" secondItem="0P6-s5-AEd" secondAttribute="centerY" id="dKG-Uw-evR"/>
+                            <constraint firstItem="xsj-su-qPS" firstAttribute="height" secondItem="HbI-EI-doq" secondAttribute="height" id="mgN-Hy-GMh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0P6-s5-AEd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="znc-E3-4N3"/>
+                    <connections>
+                        <outlet property="userTabelView" destination="xsj-su-qPS" id="CpB-PK-RK4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9rj-Sz-PeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-964" y="28"/>
         </scene>
         <!--My Table View Controller-->
         <scene sceneID="wtO-Bk-X4O">
