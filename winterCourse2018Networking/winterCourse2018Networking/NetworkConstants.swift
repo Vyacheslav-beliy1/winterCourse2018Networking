@@ -11,6 +11,6 @@ import Foundation
 let SERVER = URL(string:"http://jsonplaceholder.typicode.com")
 let POSTSAPI = URL(string:"http://jsonplaceholder.typicode.com/posts")
 let USERAPI = URL(string:"http://jsonplaceholder.typicode.com/users")
-
+let COMMENTSAPI = URL(string:"http://jsonplaceholder.typicode.com/comments")
 
 let STORAGEPOSTAPI = "Posts"
