@@ -20,6 +20,12 @@
 		17AC4453205D334F00F3DDD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AC4451205D334F00F3DDD1 /* LaunchScreen.storyboard */; };
 		17AC445B205D483A00F3DDD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC445A205D483A00F3DDD1 /* Post.swift */; };
 		17AC445D205D64C900F3DDD1 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC445C205D64C900F3DDD1 /* NetworkConstants.swift */; };
+		E7041CD1209A296A00E4636B /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7041CD0209A296A00E4636B /* PostsViewController.swift */; };
+		E7041CD4209A2A4A00E4636B /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7041CD2209A2A4A00E4636B /* PostsTableViewCell.swift */; };
+		E7041CD5209A2A4A00E4636B /* PostsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7041CD3209A2A4A00E4636B /* PostsTableViewCell.xib */; };
+		E7041CD7209A31C500E4636B /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7041CD6209A31C500E4636B /* CommentsViewController.swift */; };
+		E7041CDA209A322A00E4636B /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7041CD8209A322A00E4636B /* CommentsTableViewCell.swift */; };
+		E7041CDB209A322A00E4636B /* CommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7041CD9209A322A00E4636B /* CommentsTableViewCell.xib */; };
 		E79A213420988A8B009A7244 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A213320988A8B009A7244 /* UserViewController.swift */; };
 		E79A213720988AD0009A7244 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A213520988AD0009A7244 /* UserTableViewCell.swift */; };
 		E79A213820988AD0009A7244 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E79A213620988AD0009A7244 /* UserTableViewCell.xib */; };
@@ -42,6 +48,12 @@
 		17AC4454205D334F00F3DDD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17AC445A205D483A00F3DDD1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		17AC445C205D64C900F3DDD1 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		E7041CD0209A296A00E4636B /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		E7041CD2209A2A4A00E4636B /* PostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewCell.swift; sourceTree = "<group>"; };
+		E7041CD3209A2A4A00E4636B /* PostsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsTableViewCell.xib; sourceTree = "<group>"; };
+		E7041CD6209A31C500E4636B /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		E7041CD8209A322A00E4636B /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
+		E7041CD9209A322A00E4636B /* CommentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsTableViewCell.xib; sourceTree = "<group>"; };
 		E79A213320988A8B009A7244 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		E79A213520988AD0009A7244 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		E79A213620988AD0009A7244 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
@@ -81,6 +93,12 @@
 				E79A213320988A8B009A7244 /* UserViewController.swift */,
 				E79A213520988AD0009A7244 /* UserTableViewCell.swift */,
 				E79A213620988AD0009A7244 /* UserTableViewCell.xib */,
+				E7041CD0209A296A00E4636B /* PostsViewController.swift */,
+				E7041CD2209A2A4A00E4636B /* PostsTableViewCell.swift */,
+				E7041CD3209A2A4A00E4636B /* PostsTableViewCell.xib */,
+				E7041CD6209A31C500E4636B /* CommentsViewController.swift */,
+				E7041CD8209A322A00E4636B /* CommentsTableViewCell.swift */,
+				E7041CD9209A322A00E4636B /* CommentsTableViewCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -178,8 +196,10 @@
 				17AC4453205D334F00F3DDD1 /* LaunchScreen.storyboard in Resources */,
 				1769EF7F20669ECC006845B3 /* MyTableViewCell.xib in Resources */,
 				17AC4450205D334F00F3DDD1 /* Assets.xcassets in Resources */,
+				E7041CD5209A2A4A00E4636B /* PostsTableViewCell.xib in Resources */,
 				17AC444E205D334F00F3DDD1 /* Main.storyboard in Resources */,
 				E79A213820988AD0009A7244 /* UserTableViewCell.xib in Resources */,
+				E7041CDB209A322A00E4636B /* CommentsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,13 +215,17 @@
 				1769EF7E20669ECC006845B3 /* MyTableViewCell.swift in Sources */,
 				1769EF7B20669DED006845B3 /* MyTableViewController.swift in Sources */,
 				E79A213720988AD0009A7244 /* UserTableViewCell.swift in Sources */,
+				E7041CD4209A2A4A00E4636B /* PostsTableViewCell.swift in Sources */,
 				17AC445B205D483A00F3DDD1 /* Post.swift in Sources */,
 				1769EF7520668EFA006845B3 /* NetworkManager.swift in Sources */,
+				E7041CD7209A31C500E4636B /* CommentsViewController.swift in Sources */,
+				E7041CD1209A296A00E4636B /* PostsViewController.swift in Sources */,
 				17AC444B205D334F00F3DDD1 /* ViewController.swift in Sources */,
 				17AC4449205D334E00F3DDD1 /* AppDelegate.swift in Sources */,
 				1769EF77206693C2006845B3 /* Storage.swift in Sources */,
 				E79A213A209893D6009A7244 /* User.swift in Sources */,
 				177FB8C62098FB530086B095 /* Comments.swift in Sources */,
+				E7041CDA209A322A00E4636B /* CommentsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

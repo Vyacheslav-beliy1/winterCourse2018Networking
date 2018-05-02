@@ -63,6 +63,66 @@
             </objects>
             <point key="canvasLocation" x="-1649" y="27"/>
         </scene>
+        <!--Posts View Controller-->
+        <scene sceneID="4jM-D7-KbU">
+            <objects>
+                <viewController id="eYD-jJ-zWf" customClass="PostsViewController" customModule="winterCourse2018Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Pb-hi-j2t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PostsTabelViewInditifier" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bFC-nJ-cl3">
+                                <rect key="frame" x="-0.5" y="10" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bFC-nJ-cl3" firstAttribute="centerY" secondItem="bRb-E5-1tx" secondAttribute="centerY" id="CJ4-Ig-aIP"/>
+                            <constraint firstItem="bFC-nJ-cl3" firstAttribute="centerX" secondItem="bRb-E5-1tx" secondAttribute="centerX" id="k97-ph-GFD"/>
+                            <constraint firstItem="bFC-nJ-cl3" firstAttribute="width" secondItem="2Pb-hi-j2t" secondAttribute="width" id="m9Y-cs-eAq"/>
+                            <constraint firstItem="bFC-nJ-cl3" firstAttribute="height" secondItem="2Pb-hi-j2t" secondAttribute="height" id="xfN-SK-4iB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bRb-E5-1tx"/>
+                    </view>
+                    <connections>
+                        <outlet property="postsTabelView" destination="bFC-nJ-cl3" id="ChS-0c-bVy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fx4-ca-Jlw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1659" y="817"/>
+        </scene>
+        <!--Comments View Controller-->
+        <scene sceneID="GLo-Ox-si8">
+            <objects>
+                <viewController id="Coh-Rf-5eA" customClass="CommentsViewController" customModule="winterCourse2018Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Hf-q4-Db8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CommentsTabelViewInditifier" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FL6-r8-tj8">
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FL6-r8-tj8" firstAttribute="centerX" secondItem="txv-tr-xzV" secondAttribute="centerX" id="POn-Qq-Idx"/>
+                            <constraint firstItem="FL6-r8-tj8" firstAttribute="height" secondItem="3Hf-q4-Db8" secondAttribute="height" id="d6x-LQ-wIF"/>
+                            <constraint firstItem="FL6-r8-tj8" firstAttribute="centerY" secondItem="txv-tr-xzV" secondAttribute="centerY" id="hSu-h5-55K"/>
+                            <constraint firstItem="FL6-r8-tj8" firstAttribute="width" secondItem="3Hf-q4-Db8" secondAttribute="width" id="iGb-OL-mdJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="txv-tr-xzV"/>
+                    </view>
+                    <connections>
+                        <outlet property="commentsTabelView" destination="FL6-r8-tj8" id="0xm-ow-G2y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vFB-Xr-VDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-696" y="838"/>
+        </scene>
         <!--User View Controller-->
         <scene sceneID="yjK-S1-oXb">
             <objects>
