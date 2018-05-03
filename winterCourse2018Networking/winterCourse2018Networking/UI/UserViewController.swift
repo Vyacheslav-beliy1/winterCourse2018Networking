@@ -15,10 +15,22 @@ class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.userTabelView.register(UINib(nibName: "UserTableViewCell", bundle: nil), forCellReuseIdentifier: "UserTableViewCell")
+        self.userTabelView.register(UINib(nibName: "UserTableViewCell", bundle: nil), forCellReuseIdentifier: "UserTableViewCellIIdentifier")
         
         userTabelView.delegate = self
         userTabelView.dataSource = self
+        
+        NetworkManager.getUsers() { (downloadedUsers, textError) in
+            DispatchQueue.main.async {
+                if let error = textError {
+                    // TODO: show allert that something goes wrong
+                } else {
+                    self.usersArray = downloadedUsers
+                    self.userTabelView.reloadData()
+                }
+                
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,10 +57,13 @@ extension UserViewController : UITableViewDelegate , UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           let cell = userTabelView.dequeueReusableCell(withIdentifier: "UserTabelViewInditifier", for: indexPath) as! UserTableViewCell
+           let cell = userTabelView.dequeueReusableCell(withIdentifier: "UserTableViewCellIIdentifier", for: indexPath) as! UserTableViewCell
         cell.user = usersArray[indexPath.row]
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NavigationManager.showPostsVC(user: usersArray[indexPath.row], on: self.navigationController)
+    }
     
 }

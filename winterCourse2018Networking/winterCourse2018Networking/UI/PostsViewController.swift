@@ -10,6 +10,7 @@ import UIKit
 
 class PostsViewController: UIViewController {
     
+    var user: User?
     var postsArray = [Post]()
 
     @IBOutlet weak var postsTabelView: UITableView!
