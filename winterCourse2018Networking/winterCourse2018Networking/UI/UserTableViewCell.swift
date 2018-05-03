@@ -9,6 +9,9 @@
 import UIKit
 
 class UserTableViewCell: UITableViewCell {
+    
+    static let identifier = "UserTableViewCellIdentifier"
+    
     var user : User? {
         didSet {
             guard let currentUser = user else {return}

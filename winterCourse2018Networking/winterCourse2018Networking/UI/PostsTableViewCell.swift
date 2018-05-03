@@ -9,6 +9,9 @@
 import UIKit
 
 class PostsTableViewCell: UITableViewCell {
+    
+    static let identifier = "PostsTableViewCellIdentifier"
+    
     var posts : Post? {
         didSet {
              guard let currentPost = posts else {return}

@@ -16,7 +16,7 @@ class PostsViewController: UIViewController {
     @IBOutlet weak var postsTabelView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.postsTabelView.register(UINib(nibName: "PostsTableViewCell", bundle: nil), forCellReuseIdentifier: "PostsTableViewCell")
+        self.postsTabelView.register(UINib(nibName: "PostsTableViewCell", bundle: nil), forCellReuseIdentifier: PostsTableViewCell.identifier)
         
         postsTabelView.delegate = self
         postsTabelView.dataSource = self
@@ -46,7 +46,7 @@ extension PostsViewController : UITableViewDelegate , UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = postsTabelView.dequeueReusableCell(withIdentifier: "PostsTabelViewInditifier", for: indexPath) as! PostsTableViewCell
+        let cell = postsTabelView.dequeueReusableCell(withIdentifier: PostsTableViewCell.identifier, for: indexPath) as! PostsTableViewCell
         cell.posts = postsArray[indexPath.row]
         return cell
     }

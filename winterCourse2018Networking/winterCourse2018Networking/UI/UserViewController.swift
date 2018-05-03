@@ -11,11 +11,14 @@ import UIKit
 class UserViewController: UIViewController {
 
     @IBOutlet weak var userTabelView: UITableView!
+    
     var usersArray = [User]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.userTabelView.register(UINib(nibName: "UserTableViewCell", bundle: nil), forCellReuseIdentifier: "UserTableViewCellIIdentifier")
+        let nib = UINib(nibName: "UserTableViewCell", bundle: nil)
+        self.userTabelView.register(nib, forCellReuseIdentifier: UserTableViewCell.identifier)
         
         userTabelView.delegate = self
         userTabelView.dataSource = self
@@ -57,7 +60,7 @@ extension UserViewController : UITableViewDelegate , UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           let cell = userTabelView.dequeueReusableCell(withIdentifier: "UserTableViewCellIIdentifier", for: indexPath) as! UserTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: UserTableViewCell.identifier, for: indexPath) as! UserTableViewCell
         cell.user = usersArray[indexPath.row]
         return cell
     }

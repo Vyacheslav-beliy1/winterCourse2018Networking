@@ -9,6 +9,9 @@
 import UIKit
 
 class CommentsTableViewCell: UITableViewCell {
+    
+    static let idetifier = "CommentsTableViewCellIdentifier"
+    
     var comments : Comment?{
         didSet{
               guard let currentComments = comments else {return}

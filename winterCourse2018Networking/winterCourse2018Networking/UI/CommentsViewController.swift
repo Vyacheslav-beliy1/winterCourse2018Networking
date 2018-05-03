@@ -14,7 +14,7 @@ class CommentsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.commentsTabelView.register(UINib(nibName: "CommentsTableViewCell", bundle: nil), forCellReuseIdentifier: "CommentsTableViewCell")
+        self.commentsTabelView.register(UINib(nibName: "CommentsTableViewCell", bundle: nil), forCellReuseIdentifier: CommentsTableViewCell.idetifier)
         
         commentsTabelView.delegate = self
         commentsTabelView.dataSource = self
