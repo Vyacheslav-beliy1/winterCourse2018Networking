@@ -19,6 +19,19 @@ class CommentsViewController: UIViewController {
         
         commentsTabelView.delegate = self
         commentsTabelView.dataSource = self
+        
+        NetworkManager.getCommentsFor(postId: (post?.id)!) { (downloadedComments, textError) in
+            DispatchQueue.main.async {
+                if let error = textError {
+                    //allert
+                } else{
+                    self.commentsArray = downloadedComments
+                    self.commentsTabelView.reloadData()
+                }
+            }
+            
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

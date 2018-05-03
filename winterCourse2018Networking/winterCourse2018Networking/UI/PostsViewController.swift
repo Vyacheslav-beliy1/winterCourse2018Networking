@@ -21,6 +21,19 @@ class PostsViewController: UIViewController {
         postsTabelView.delegate = self
         postsTabelView.dataSource = self
         
+        NetworkManager.getPostsFor(userId: (user?.id)!) { (downloadedPosts , textError) in
+            DispatchQueue.main.async {
+                if let error = textError {
+                    //allert
+                } else{
+                    self.postsArray = downloadedPosts
+                    self.postsTabelView.reloadData()
+                }
+            }
+            
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
