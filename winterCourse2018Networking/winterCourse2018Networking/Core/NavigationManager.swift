@@ -20,5 +20,17 @@ class NavigationManager {
             assert(true, "there is no navigation controller")
         }
     }
+    class  func showCommentsVc(post : Post ,  on navigation : UINavigationController?) {
+        let storyboard = UIStoryboard.init(name : "Main" , bundle : nil)
+        guard let commentsVc = storyboard.instantiateViewController(withIdentifier: "CommentsViewControllerIdentifier") as? CommentsViewController  else {return}
+        commentsVc.post = post
+        if let nav = navigation {
+            navigation?.pushViewController(commentsVc, animated: true)
+        }else {
+            assert(true , "There is no navigation controller")
+        }
+        
+        
+    }
 
 }

@@ -50,6 +50,9 @@ extension PostsViewController : UITableViewDelegate , UITableViewDataSource {
         cell.posts = postsArray[indexPath.row]
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NavigationManager.showCommentsVc(post: postsArray[indexPath.row], on: self.navigationController)
+    }
     
     
 }
