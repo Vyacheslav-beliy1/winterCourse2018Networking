@@ -9,6 +9,7 @@
 import UIKit
 
 class CommentsViewController: UIViewController {
+    var post  : Post?
     var commentsArray = [Comment]()
     @IBOutlet weak var commentsTabelView: UITableView!
     override func viewDidLoad() {
