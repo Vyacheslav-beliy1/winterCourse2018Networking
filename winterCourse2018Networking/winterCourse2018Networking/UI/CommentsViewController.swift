@@ -20,17 +20,17 @@ class CommentsViewController: UIViewController {
         commentsTabelView.delegate = self
         commentsTabelView.dataSource = self
         
-        NetworkManager.getCommentsFor(postId: (post?.id)!) { (downloadedComments, textError) in
-            DispatchQueue.main.async {
-                if let error = textError {
-                    //allert
-                } else{
-                    self.commentsArray = downloadedComments
-                    self.commentsTabelView.reloadData()
+        if let id = post?.id {
+            NetworkManager.getCommentsFor(postId: id) { (downloadedComments, textError) in
+                DispatchQueue.main.async {
+                    if let error = textError {
+                        //allert
+                    } else{
+                        self.commentsArray = downloadedComments
+                        self.commentsTabelView.reloadData()
+                    }
                 }
             }
-            
-            
         }
     }
 
@@ -57,7 +57,7 @@ extension CommentsViewController : UITableViewDelegate , UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = commentsTabelView.dequeueReusableCell(withIdentifier: "CommentsTabelViewInditifier", for: indexPath) as! CommentsTableViewCell
+        let cell = commentsTabelView.dequeueReusableCell(withIdentifier: CommentsTableViewCell.idetifier, for: indexPath) as! CommentsTableViewCell
         cell.comments = commentsArray[indexPath.row]
         return cell
     }
